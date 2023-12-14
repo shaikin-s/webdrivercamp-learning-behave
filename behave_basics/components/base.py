@@ -8,4 +8,4 @@ class Base:
         self.wait = wait
 
     def click(self, xpath):
-        self.wait.until(EC.element_to_be_clickable((By.XPATH, xpath)))
+        self.wait.until(EC.element_to_be_clickable((By.XPATH, xpath))).click()
